@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.source       = { :git => 'https://github.com/AnswerXu/ZB-3D-CycleScrollViewDemo.git', :tag => s.version.to_s }
     s.platform     = :ios, '8.0'
     s.source_files = 'ZB(3D)CycleScrollViewDemo/ZB(3D)CycleScrollView/*.{h,m}',
-    s.framework    = 'UIKit','CAAnimationDelegate'
+    s.framework    = 'UIKit','CAAnimation'
     s.requires_arc = true
     s.dependency 'SDWebImage'
 

@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
     s.source_files = 'ZB(3D)CycleScrollViewDemo/ZB(3D)CycleScrollView/*.{h,m}',
     s.framework    = 'UIKit'
     s.requires_arc = true
-    s.dependency 'SDWebImage', '~> 3.7'
+    s.dependency 'SDWebImage'
 end

@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name         = 'ZB_3D_CycleScrollView'
+    s.name         = 'ZB_3D_CycleScrollViewDemo'
     s.version      = '0.0.1'
     s.summary      = '实现3D轮播效果，可加载本地图片和网络图片，可塑性高，使用简单方便。'
     s.homepage     = 'https://github.com/AnswerXu/ZB-3D-CycleScrollViewDemo.git'

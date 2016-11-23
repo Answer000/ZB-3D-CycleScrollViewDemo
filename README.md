@@ -2,6 +2,7 @@
 
 ### 框架作用
  * 实现3D无限轮播效果，可加载本地图片和网络图片
+ * https://github.com/AnswerXu/ZB-3D-CycleScrollViewDemo.git
  
 ### 图文详情
  ![image]()
@@ -16,10 +17,16 @@
         _cycleScrollView = [[ZB_3D_CycleScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 200)];
         //设置网络图片数组
         _cycleScrollView.urlImageNames = self.urlImageNames;
+        //设置本地图片数组
+        //_cycleScrollView.localImageNames = self.localImageNames;
         //设置标题数组
         _cycleScrollView.titles = self.titles;
         //设置标题填充样式
         _cycleScrollView.titleLabelAlignment = NSTextAlignmentCenter;
+        //设置标题字体
+        _cycleScrollView.titleLabelFont = [UIFont boldSystemFontOfSize:20];
+        //设置轮播方向：Right，Left，Top，Bottom
+        _cycleScrollView2.dirction = DirectionLeft;
         //轮播间隔时间:必须大于默认动画时间
         _cycleScrollView.timeInterval = 3;
         //默认动画时间
@@ -44,4 +51,9 @@
 }
 
 ```
+
+### 
+
+	   谢谢支持，可能还有很多不完善的地方，期待您的建议！如果有帮到您，请不吝follow，您的支持与鼓励是我继续前行的动力。
+	   邮箱：zhengbo073017@163.com
 

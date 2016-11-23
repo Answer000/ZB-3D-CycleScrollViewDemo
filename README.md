@@ -5,7 +5,7 @@
  * https://github.com/AnswerXu/ZB-3D-CycleScrollViewDemo.git
  
 ### 图文详情
- ![image]()
+ ![image](https://github.com/AnswerXu/ZB-3D-CycleScrollViewDemo/blob/master/ReadImage/ZBCycleScrollView.gif)
  
 ### 使用方法
  * 手动导入(暂不支持cocoapods导入):将ZB(3D)CycleScrollView文件夹拖入工程后声明ZB_3D_CycleScrollView.h头文件即可

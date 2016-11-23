@@ -11,8 +11,8 @@
  
  * 代码创建
 ```Objc
-    - (ZB_3D_CycleScrollView *)cycleScrollView{
-    if (!_cycleScrollView) {
+- (ZB_3D_CycleScrollView *)cycleScrollView{
+    if (!_cycleScrollView) {
         _cycleScrollView = [[ZB_3D_CycleScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 200)];
         //设置网络图片数组
         _cycleScrollView.urlImageNames = self.urlImageNames;
@@ -38,8 +38,8 @@
 ```
 
 ```Objc 
-    //点击触发代理方法
-    - (void)cycleScrollView:(ZB_3D_CycleScrollView *)cycleScrollView DidSelectItem:(NSInteger)indexPathItem{
+//点击触发代理方法
+- (void)cycleScrollView:(ZB_3D_CycleScrollView *)cycleScrollView DidSelectItem:(NSInteger)indexPathItem{
     NSLog(@"点击%@-tag:%ld的第%ld张图片",NSStringFromClass([cycleScrollView class]),cycleScrollView.tag, indexPathItem);
 }
 

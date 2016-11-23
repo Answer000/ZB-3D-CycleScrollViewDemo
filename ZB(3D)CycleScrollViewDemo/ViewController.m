@@ -70,7 +70,7 @@
         _cycleScrollView.tag = 1000;
         _cycleScrollView.titleLabelAlignment = NSTextAlignmentCenter;
         _cycleScrollView.currentPageIndicatorTintColor = [UIColor redColor];
-        //间隔时间必须大于默认动画时间
+        //轮播间隔时间必须大于默认动画时间
         _cycleScrollView.timeInterval = 3;
         _cycleScrollView.animationTimeWhenDefault = 0.5f;
         _cycleScrollView.animationTimeWhenGrag = 0.3f;
@@ -105,10 +105,4 @@
     [self.navigationController pushViewController:[XIBViewController new] animated:YES];
 }
 
-#pragma mark-  销毁定时器
-- (void)dealloc{
-    NSLog(@"%s----%s",__FILE__,__func__);
-    [self.cycleScrollView releaseTimer];
-    [self.cycleScrollView2 releaseTimer];
-}
 @end

@@ -109,7 +109,7 @@
 #pragma mark-  销毁定时器
 - (void)dealloc{
     NSLog(@"%s----%s",__FILE__,__func__);
-    [self.xibCycleView releaseTimer];
+//    [self.xibCycleView releaseTimer];
 }
 
 

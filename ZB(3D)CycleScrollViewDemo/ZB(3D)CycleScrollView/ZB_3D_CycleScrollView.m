@@ -398,10 +398,11 @@
     [self.timer invalidate];
     self.timer = nil;
 }
-
--(void)dealloc{
-    NSLog(@"%s----%s",__FILE__,__func__);
-    [self releaseTimer];
+#pragma mark   解决当父视图被释放时，当前视图因被_timer强引用而无法释放问题
+-(void)willMoveToSuperview:(UIView *)newSuperview{
+    if (!newSuperview) {
+        [self releaseTimer];
+    }
 }
 
 @end

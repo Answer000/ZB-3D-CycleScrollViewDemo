@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class ZB_3D_CycleScrollView;
 
 /**
@@ -89,6 +90,6 @@ typedef enum : NSInteger {
 /**
  *  声明代理
  */
-@property (nonatomic,strong) id<ZB_3D_CycleScrollViewDelegate> delegate;
+@property (nonatomic,weak) id<ZB_3D_CycleScrollViewDelegate> delegate;
 
 @end

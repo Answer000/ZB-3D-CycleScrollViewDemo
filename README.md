@@ -11,7 +11,7 @@
  * 手动导入:将ZB(3D)CycleScrollView文件夹拖入工程后声明ZB_3D_CycleScrollView.h头文件即可
  * pods导入:
  ```
- 	pod 'ZB_3D_CycleScrollView', '~> 0.0.5'
+ 	pod 'ZB_3D_CycleScrollView', '~> 0.0.6'
  ```
  
  

@@ -8,7 +8,12 @@
  ![image](https://github.com/AnswerXu/ZB-3D-CycleScrollViewDemo/blob/master/ReadImage/ZBCycleScrollView.gif)
  
 ### 使用方法
- * 手动导入(暂不支持cocoapods导入):将ZB(3D)CycleScrollView文件夹拖入工程后声明ZB_3D_CycleScrollView.h头文件即可
+ * 手动导入:将ZB(3D)CycleScrollView文件夹拖入工程后声明ZB_3D_CycleScrollView.h头文件即可
+ * pods导入:
+ ```
+ 	pod 'ZB_3D_CycleScrollView', '~> 0.0.4'
+ ```
+ 
  
  * 代码创建
 ```Objc
@@ -54,6 +59,6 @@
 
 ### 
 
-	   谢谢支持，可能还有很多不完善的地方，期待您的建议！如果有帮到您，请不吝follow，您的支持与鼓励是我继续前行的动力。
+	   谢谢支持，可能还有很多不完善的地方，期待您的建议！如对您有帮助，请不吝您的Star，您的支持与鼓励是我继续前行的动力。
 	   邮箱：zhengbo073017@163.com
 

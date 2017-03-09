@@ -31,7 +31,7 @@
         //设置标题字体
         _cycleScrollView.titleLabelFont = [UIFont boldSystemFontOfSize:20];
         //设置轮播方向：Right，Left，Top，Bottom
-        _cycleScrollView.dirction = DirectionLeft;
+        _cycleScrollView.dirction = DirectionLeft;
 	//设置占位图片（传UIImage对象)
         _cycleScrollView.placeholderImage = [UIImage imageNamed:@"placeholderImage"];
         //轮播间隔时间:必须大于默认动画时间

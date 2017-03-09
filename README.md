@@ -31,7 +31,9 @@
         //设置标题字体
         _cycleScrollView.titleLabelFont = [UIFont boldSystemFontOfSize:20];
         //设置轮播方向：Right，Left，Top，Bottom
-        _cycleScrollView2.dirction = DirectionLeft;
+        _cycleScrollView.dirction = DirectionLeft;
+	//设置占位图片（传UIImage对象)
+	_cycleScrollView.placeholderImage = [UIImage imageNamed:@"placeholderImage"];
         //轮播间隔时间:必须大于默认动画时间
         _cycleScrollView.timeInterval = 3;
         //默认动画时间
@@ -55,8 +57,17 @@
     NSLog(@"点击%@-tag:%ld的第%ld张图片",NSStringFromClass([cycleScrollView class]),cycleScrollView.tag, indexPathItem);
 }
 
-```	
-	
+```		
+* 在使用过程中可能会遇到滑动手势与其他控件的手势发生冲突的问题，因此提供了一个解决手势冲突的方法:
+```Objc
+	/**
+ 	将轮播图拖动手势设置为较高优先级
+ 	@param gesture 与轮播图拖动手势相冲突的手势
+ 	*/
+	-(void)setLowPriorityWithGesture:(UIGestureRecognizer *)gesture;
+```
+
+
 ### 
 
 	   谢谢支持，可能还有很多不完善的地方，期待您的建议！如对您有帮助，请不吝您的Star，您的支持与鼓励是我继续前行的动力。

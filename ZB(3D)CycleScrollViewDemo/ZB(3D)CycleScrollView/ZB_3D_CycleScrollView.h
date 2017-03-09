@@ -34,6 +34,10 @@ typedef enum : NSInteger {
  */
 @property (nonatomic,copy) NSArray<NSString *> *urlImageNames;
 /**
+ 网络加载图片失败时的占位图
+ */
+@property (nonatomic,copy) UIImage *placeholderImage;
+/**
  *  用于存放本地轮播图片的数组
  */
 @property (nonatomic,copy) NSArray<NSString *> *localImageNames;
@@ -87,6 +91,11 @@ typedef enum : NSInteger {
  *  定时器必须在当前控制器中销毁
  */
 - (void)releaseTimer;
+/**
+ 将轮播图拖动手势设置为较高优先级
+ @param gesture 与轮播图拖动手势相冲突的手势
+ */
+-(void)setLowPriorityWithGesture:(UIGestureRecognizer *)gesture;
 /**
  *  声明代理
  */

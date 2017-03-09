@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ZB(3D)CycleScrollView_Swift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,21 @@
 			<true/>
 		</dict>
 		<key>34B474441DE2939300EB8D30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>34F5F8B11DF1494F00440661</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>34F5F8C41DF1495000440661</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>34F5F8CF1DF1495000440661</key>
 		<dict>
 			<key>primary</key>
 			<true/>

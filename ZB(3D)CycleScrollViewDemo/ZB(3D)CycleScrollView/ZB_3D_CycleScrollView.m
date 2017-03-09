@@ -152,7 +152,6 @@
     [self addSubview:self.dispalyImageView];
     [self.dispalyImageView addSubview:self.titleLable];
     [self addSubview:self.pageControl];
-    self.pageControl.numberOfPages = self.images.count;
     [self addFollowDirctionSwipeGesture];
     [self addReverseDirctionSwipeGesture];
     [self timer];
@@ -225,11 +224,12 @@
 
 - (void)setImageView{
     if ([self.images.firstObject containsString:@"http://"] || [self.images.firstObject containsString:@"https://"]) {
-        [self.dispalyImageView sd_setImageWithURL:[NSURL URLWithString:self.images.firstObject] placeholderImage:[UIImage imageNamed:@"loadFail.jpg"]];
+        [self.dispalyImageView sd_setImageWithURL:[NSURL URLWithString:self.images.firstObject] placeholderImage:_placeholderImage ? _placeholderImage : [UIImage imageNamed:@"loadFail.jpg"]];
     }else{
         self.dispalyImageView.image = [UIImage imageNamed:self.images.firstObject];
     }
     self.dispalyImageView.userInteractionEnabled = YES;
+    self.pageControl.numberOfPages = self.images.count;
     //添加点击手势
     [self.dispalyImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cycleScrollViewDidSelectedItem)]];
 }
@@ -383,6 +383,12 @@
     if ([self.delegate respondsToSelector:@selector(cycleScrollView:DidSelectItem:)]) {
         [self.delegate cycleScrollView:self DidSelectItem:_currentImg];
     }
+}
+
+#pragma mark-  解决拖动手势冲突问题
+-(void)setLowPriorityWithGesture:(UIGestureRecognizer *)gesture{
+    [gesture requireGestureRecognizerToFail:self.followGesture];
+    [gesture requireGestureRecognizerToFail:self.reverseGesture];
 }
 
 #pragma mark  暂停计时器

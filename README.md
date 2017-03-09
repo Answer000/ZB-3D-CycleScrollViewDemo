@@ -11,7 +11,7 @@
  * 手动导入:将ZB(3D)CycleScrollView文件夹拖入工程后声明ZB_3D_CycleScrollView.h头文件即可
  * pods导入:
  ```
- 	pod 'ZB_3D_CycleScrollView', '~> 0.0.4'
+ 	pod 'ZB_3D_CycleScrollView', '~> 0.0.5'
  ```
  
  
@@ -55,8 +55,8 @@
     NSLog(@"点击%@-tag:%ld的第%ld张图片",NSStringFromClass([cycleScrollView class]),cycleScrollView.tag, indexPathItem);
 }
 
-```
-
+```	
+	
 ### 
 
 	   谢谢支持，可能还有很多不完善的地方，期待您的建议！如对您有帮助，请不吝您的Star，您的支持与鼓励是我继续前行的动力。

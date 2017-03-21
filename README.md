@@ -4,7 +4,7 @@
  * 实现3D无限轮播效果，可加载本地图片和网络图片
  * https://github.com/AnswerXu/ZB-3D-CycleScrollViewDemo.git
  
-### 图文详情
+### 效果图
  ![image](https://github.com/AnswerXu/ZB-3D-CycleScrollViewDemo/blob/master/ReadImage/ZBCycleScrollView.gif)
  
 ### 使用方法
